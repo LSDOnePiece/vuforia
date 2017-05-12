@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18EB634E1ACCA16900EF1C28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18EB634D1ACCA16900EF1C28 /* Localizable.strings */; };
+		D21B07EC1A1B4AA20041ECF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EB1A1B4AA20041ECF3 /* main.m */; };
+		D21B07EF1A1B4AA20041ECF3 /* BackgroundTextureAccessAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EE1A1B4AA20041ECF3 /* BackgroundTextureAccessAppDelegate.m */; };
+		D21B07F71A1B4AA20041ECF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21B07F61A1B4AA20041ECF3 /* Images.xcassets */; };
+		D21B082D1A1B555B0041ECF3 /* SampleAppAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B082C1A1B555B0041ECF3 /* SampleAppAboutViewController.m */; };
+		D21B085B1A1B698A0041ECF3 /* SampleApplication3DModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B08511A1B698A0041ECF3 /* SampleApplication3DModel.m */; };
+		D21B085C1A1B698A0041ECF3 /* SampleApplicationSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = D21B08531A1B698A0041ECF3 /* SampleApplicationSession.mm */; };
+		D21B085D1A1B698A0041ECF3 /* SampleApplicationShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B08551A1B698A0041ECF3 /* SampleApplicationShaderUtils.m */; };
+		D21B085E1A1B698A0041ECF3 /* SampleApplicationUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D21B08561A1B698A0041ECF3 /* SampleApplicationUtils.cpp */; };
+		D21B085F1A1B698A0041ECF3 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = D21B085A1A1B698A0041ECF3 /* Texture.mm */; };
+		D21B08651A1B69A10041ECF3 /* Line.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = D21B08611A1B69A10041ECF3 /* Line.fragsh */; };
+		D21B08661A1B69A10041ECF3 /* Line.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = D21B08621A1B69A10041ECF3 /* Line.vertsh */; };
+		D21B08671A1B69A10041ECF3 /* Simple.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = D21B08631A1B69A10041ECF3 /* Simple.fragsh */; };
+		D21B08681A1B69A10041ECF3 /* Simple.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = D21B08641A1B69A10041ECF3 /* Simple.vertsh */; };
+		D21B08711A1B6AD60041ECF3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B08691A1B6AD60041ECF3 /* AVFoundation.framework */; };
+		D21B08721A1B6AD60041ECF3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B086A1A1B6AD60041ECF3 /* CoreFoundation.framework */; };
+		D21B08731A1B6AD60041ECF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B086B1A1B6AD60041ECF3 /* CoreGraphics.framework */; };
+		D21B08741A1B6AD60041ECF3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B086C1A1B6AD60041ECF3 /* OpenGLES.framework */; };
+		D21B08751A1B6AD60041ECF3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B086D1A1B6AD60041ECF3 /* QuartzCore.framework */; };
+		D21B08761A1B6AD60041ECF3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B086E1A1B6AD60041ECF3 /* Security.framework */; };
+		D21B08771A1B6AD60041ECF3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B086F1A1B6AD60041ECF3 /* SystemConfiguration.framework */; };
+		D21B08781A1B6AD60041ECF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B08701A1B6AD60041ECF3 /* UIKit.framework */; };
+		D21B087A1A1B6AEA0041ECF3 /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B08791A1B6AEA0041ECF3 /* libVuforia.a */; };
+		D21B087E1A1B6E1E0041ECF3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B087C1A1B6E1E0041ECF3 /* CoreMotion.framework */; };
+		D21B087F1A1B6E1E0041ECF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B087D1A1B6E1E0041ECF3 /* Foundation.framework */; };
+		D21B08811A1B71190041ECF3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B08801A1B71190041ECF3 /* CoreMedia.framework */; };
+		D272A5741A9245EA00FD0C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D272A5721A9245EA00FD0C30 /* Main.storyboard */; };
+		D2C2DBFF1AAF1FCD00FADFDE /* BackgroundTextureAccessEAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2C2DBFC1AAF1FCD00FADFDE /* BackgroundTextureAccessEAGLView.mm */; };
+		D2C2DC001AAF1FCD00FADFDE /* BackgroundTextureAccessViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2C2DBFE1AAF1FCD00FADFDE /* BackgroundTextureAccessViewController.mm */; };
+		D2C2DC041AAF1FF200FADFDE /* BGShader.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = D2C2DC021AAF1FF200FADFDE /* BGShader.fragsh */; };
+		D2C2DC051AAF1FF200FADFDE /* BGShader.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = D2C2DC031AAF1FF200FADFDE /* BGShader.vertsh */; };
+		D8223DCA1D6D1A86006884AE /* Background.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = D8223DC81D6D1A86006884AE /* Background.fragsh */; };
+		D8223DCB1D6D1A86006884AE /* Background.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = D8223DC91D6D1A86006884AE /* Background.vertsh */; };
+		D8223DCE1D6D1A91006884AE /* SampleAppRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8223DCD1D6D1A91006884AE /* SampleAppRenderer.mm */; };
+		FB1024EC1A82814000A2536F /* PresentMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1024E91A82814000A2536F /* PresentMenuSegue.m */; };
+		FB1024ED1A82814000A2536F /* UnwindMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1024EB1A82814000A2536F /* UnwindMenuSegue.m */; };
+		FB2F73C11A7FD5920098C5DD /* SampleAppMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB2F73C01A7FD5920098C5DD /* SampleAppMenuViewController.mm */; };
+		FBBB39BB1A8288B400DBB1D0 /* BT_about.html in Resources */ = {isa = PBXBuildFile; fileRef = FBBB39B71A8288B400DBB1D0 /* BT_about.html */; };
+		FBBB39BC1A8288B400DBB1D0 /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = FBBB39B81A8288B400DBB1D0 /* Tarmac.dat */; };
+		FBBB39BD1A8288B400DBB1D0 /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = FBBB39B91A8288B400DBB1D0 /* Tarmac.xml */; };
+		FBBB39BE1A8288B400DBB1D0 /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBB39BA1A8288B400DBB1D0 /* TextureTeapotRed.png */; };
+		FBC3277C1A88F39500639FA2 /* BTA.png in Resources */ = {isa = PBXBuildFile; fileRef = FBC3277B1A88F39500639FA2 /* BTA.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18EB634D1ACCA16900EF1C28 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D21B07E61A1B4AA20041ECF3 /* BgdTexture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BgdTexture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21B07EB1A1B4AA20041ECF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D21B07ED1A1B4AA20041ECF3 /* BackgroundTextureAccessAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundTextureAccessAppDelegate.h; sourceTree = "<group>"; };
+		D21B07EE1A1B4AA20041ECF3 /* BackgroundTextureAccessAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundTextureAccessAppDelegate.m; sourceTree = "<group>"; };
+		D21B07F61A1B4AA20041ECF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D21B08291A1B50E20041ECF3 /* BackgroundTextureAccess-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BackgroundTextureAccess-Info.plist"; sourceTree = "<group>"; };
+		D21B082B1A1B555B0041ECF3 /* SampleAppAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleAppAboutViewController.h; path = Classes/SampleAppUI/SampleAppAboutViewController.h; sourceTree = "<group>"; };
+		D21B082C1A1B555B0041ECF3 /* SampleAppAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleAppAboutViewController.m; path = Classes/SampleAppUI/SampleAppAboutViewController.m; sourceTree = "<group>"; };
+		D21B084F1A1B698A0041ECF3 /* Quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quad.h; path = Classes/SampleApplication/Quad.h; sourceTree = "<group>"; };
+		D21B08501A1B698A0041ECF3 /* SampleApplication3DModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleApplication3DModel.h; path = Classes/SampleApplication/SampleApplication3DModel.h; sourceTree = "<group>"; };
+		D21B08511A1B698A0041ECF3 /* SampleApplication3DModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleApplication3DModel.m; path = Classes/SampleApplication/SampleApplication3DModel.m; sourceTree = "<group>"; };
+		D21B08521A1B698A0041ECF3 /* SampleApplicationSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleApplicationSession.h; path = Classes/SampleApplication/SampleApplicationSession.h; sourceTree = "<group>"; };
+		D21B08531A1B698A0041ECF3 /* SampleApplicationSession.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SampleApplicationSession.mm; path = Classes/SampleApplication/SampleApplicationSession.mm; sourceTree = "<group>"; };
+		D21B08541A1B698A0041ECF3 /* SampleApplicationShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleApplicationShaderUtils.h; path = Classes/SampleApplication/SampleApplicationShaderUtils.h; sourceTree = "<group>"; };
+		D21B08551A1B698A0041ECF3 /* SampleApplicationShaderUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleApplicationShaderUtils.m; path = Classes/SampleApplication/SampleApplicationShaderUtils.m; sourceTree = "<group>"; };
+		D21B08561A1B698A0041ECF3 /* SampleApplicationUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleApplicationUtils.cpp; path = Classes/SampleApplication/SampleApplicationUtils.cpp; sourceTree = "<group>"; };
+		D21B08571A1B698A0041ECF3 /* SampleApplicationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleApplicationUtils.h; path = Classes/SampleApplication/SampleApplicationUtils.h; sourceTree = "<group>"; };
+		D21B08581A1B698A0041ECF3 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teapot.h; path = Classes/SampleApplication/Teapot.h; sourceTree = "<group>"; };
+		D21B08591A1B698A0041ECF3 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = Classes/SampleApplication/Texture.h; sourceTree = "<group>"; };
+		D21B085A1A1B698A0041ECF3 /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Texture.mm; path = Classes/SampleApplication/Texture.mm; sourceTree = "<group>"; };
+		D21B08611A1B69A10041ECF3 /* Line.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Line.fragsh; path = Classes/SampleApplication/shaders/Line.fragsh; sourceTree = "<group>"; };
+		D21B08621A1B69A10041ECF3 /* Line.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Line.vertsh; path = Classes/SampleApplication/shaders/Line.vertsh; sourceTree = "<group>"; };
+		D21B08631A1B69A10041ECF3 /* Simple.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Simple.fragsh; path = Classes/SampleApplication/shaders/Simple.fragsh; sourceTree = "<group>"; };
+		D21B08641A1B69A10041ECF3 /* Simple.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Simple.vertsh; path = Classes/SampleApplication/shaders/Simple.vertsh; sourceTree = "<group>"; };
+		D21B08691A1B6AD60041ECF3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D21B086A1A1B6AD60041ECF3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D21B086B1A1B6AD60041ECF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D21B086C1A1B6AD60041ECF3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D21B086D1A1B6AD60041ECF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D21B086E1A1B6AD60041ECF3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D21B086F1A1B6AD60041ECF3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D21B08701A1B6AD60041ECF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D21B08791A1B6AEA0041ECF3 /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVuforia.a; path = ../../build/lib/arm/libVuforia.a; sourceTree = "<group>"; };
+		D21B087C1A1B6E1E0041ECF3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D21B087D1A1B6E1E0041ECF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D21B08801A1B71190041ECF3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D272A5731A9245EA00FD0C30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2C2DBFB1AAF1FCD00FADFDE /* BackgroundTextureAccessEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundTextureAccessEAGLView.h; path = Classes/Features/BackgroundTextureAccess/BackgroundTextureAccessEAGLView.h; sourceTree = "<group>"; };
+		D2C2DBFC1AAF1FCD00FADFDE /* BackgroundTextureAccessEAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BackgroundTextureAccessEAGLView.mm; path = Classes/Features/BackgroundTextureAccess/BackgroundTextureAccessEAGLView.mm; sourceTree = "<group>"; };
+		D2C2DBFD1AAF1FCD00FADFDE /* BackgroundTextureAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundTextureAccessViewController.h; path = Classes/Features/BackgroundTextureAccess/BackgroundTextureAccessViewController.h; sourceTree = "<group>"; };
+		D2C2DBFE1AAF1FCD00FADFDE /* BackgroundTextureAccessViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BackgroundTextureAccessViewController.mm; path = Classes/Features/BackgroundTextureAccess/BackgroundTextureAccessViewController.mm; sourceTree = "<group>"; };
+		D2C2DC021AAF1FF200FADFDE /* BGShader.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BGShader.fragsh; path = Classes/Features/BackgroundTextureAccess/shaders/BGShader.fragsh; sourceTree = "<group>"; };
+		D2C2DC031AAF1FF200FADFDE /* BGShader.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BGShader.vertsh; path = Classes/Features/BackgroundTextureAccess/shaders/BGShader.vertsh; sourceTree = "<group>"; };
+		D8223DC81D6D1A86006884AE /* Background.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Background.fragsh; path = Classes/SampleApplication/shaders/Background.fragsh; sourceTree = "<group>"; };
+		D8223DC91D6D1A86006884AE /* Background.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Background.vertsh; path = Classes/SampleApplication/shaders/Background.vertsh; sourceTree = "<group>"; };
+		D8223DCC1D6D1A91006884AE /* SampleAppRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleAppRenderer.h; path = Classes/SampleApplication/SampleAppRenderer.h; sourceTree = "<group>"; };
+		D8223DCD1D6D1A91006884AE /* SampleAppRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SampleAppRenderer.mm; path = Classes/SampleApplication/SampleAppRenderer.mm; sourceTree = "<group>"; };
+		FB1024CF1A827FC000A2536F /* SampleGLResourceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleGLResourceHandler.h; path = Classes/SampleApplication/SampleGLResourceHandler.h; sourceTree = "<group>"; };
+		FB1024E81A82814000A2536F /* PresentMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentMenuSegue.h; path = Classes/SampleAppUI/Transitions/PresentMenuSegue.h; sourceTree = "<group>"; };
+		FB1024E91A82814000A2536F /* PresentMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentMenuSegue.m; path = Classes/SampleAppUI/Transitions/PresentMenuSegue.m; sourceTree = "<group>"; };
+		FB1024EA1A82814000A2536F /* UnwindMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnwindMenuSegue.h; path = Classes/SampleAppUI/Transitions/UnwindMenuSegue.h; sourceTree = "<group>"; };
+		FB1024EB1A82814000A2536F /* UnwindMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnwindMenuSegue.m; path = Classes/SampleAppUI/Transitions/UnwindMenuSegue.m; sourceTree = "<group>"; };
+		FB2F73BF1A7FD5920098C5DD /* SampleAppMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleAppMenuViewController.h; path = Classes/SampleAppUI/SampleAppMenuViewController.h; sourceTree = "<group>"; };
+		FB2F73C01A7FD5920098C5DD /* SampleAppMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SampleAppMenuViewController.mm; path = Classes/SampleAppUI/SampleAppMenuViewController.mm; sourceTree = "<group>"; };
+		FBBB39B71A8288B400DBB1D0 /* BT_about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BT_about.html; path = Resources/Assets/BackgroundTextureAccess/BT_about.html; sourceTree = "<group>"; };
+		FBBB39B81A8288B400DBB1D0 /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tarmac.dat; path = Resources/Assets/BackgroundTextureAccess/Tarmac.dat; sourceTree = "<group>"; };
+		FBBB39B91A8288B400DBB1D0 /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Tarmac.xml; path = Resources/Assets/BackgroundTextureAccess/Tarmac.xml; sourceTree = "<group>"; };
+		FBBB39BA1A8288B400DBB1D0 /* TextureTeapotRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TextureTeapotRed.png; path = Resources/Assets/BackgroundTextureAccess/TextureTeapotRed.png; sourceTree = "<group>"; };
+		FBC3277B1A88F39500639FA2 /* BTA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BTA.png; path = Resources/Assets/BackgroundTextureAccess/BTA.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D21B07E31A1B4AA20041ECF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21B08711A1B6AD60041ECF3 /* AVFoundation.framework in Frameworks */,
+				D21B08811A1B71190041ECF3 /* CoreMedia.framework in Frameworks */,
+				D21B087E1A1B6E1E0041ECF3 /* CoreMotion.framework in Frameworks */,
+				D21B08721A1B6AD60041ECF3 /* CoreFoundation.framework in Frameworks */,
+				D21B08731A1B6AD60041ECF3 /* CoreGraphics.framework in Frameworks */,
+				D21B087F1A1B6E1E0041ECF3 /* Foundation.framework in Frameworks */,
+				D21B08741A1B6AD60041ECF3 /* OpenGLES.framework in Frameworks */,
+				D21B08751A1B6AD60041ECF3 /* QuartzCore.framework in Frameworks */,
+				D21B08761A1B6AD60041ECF3 /* Security.framework in Frameworks */,
+				D21B08771A1B6AD60041ECF3 /* SystemConfiguration.framework in Frameworks */,
+				D21B08781A1B6AD60041ECF3 /* UIKit.framework in Frameworks */,
+				D21B087A1A1B6AEA0041ECF3 /* libVuforia.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D21B07DD1A1B4AA10041ECF3 = {
+			isa = PBXGroup;
+			children = (
+				D21B087B1A1B6C710041ECF3 /* Frameworks */,
+				D21B07E81A1B4AA20041ECF3 /* BackgroundTextureAccess */,
+				D21B07E71A1B4AA20041ECF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D21B07E71A1B4AA20041ECF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D21B07E61A1B4AA20041ECF3 /* BgdTexture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D21B07E81A1B4AA20041ECF3 /* BackgroundTextureAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D21B08111A1B4C500041ECF3 /* Classes */,
+				D21B08151A1B4D2A0041ECF3 /* Resources */,
+				D21B07F61A1B4AA20041ECF3 /* Images.xcassets */,
+				D272A5721A9245EA00FD0C30 /* Main.storyboard */,
+				D21B07E91A1B4AA20041ECF3 /* Supporting Files */,
+			);
+			path = BackgroundTextureAccess;
+			sourceTree = "<group>";
+		};
+		D21B07E91A1B4AA20041ECF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18EB634D1ACCA16900EF1C28 /* Localizable.strings */,
+				D21B08291A1B50E20041ECF3 /* BackgroundTextureAccess-Info.plist */,
+				D21B07EB1A1B4AA20041ECF3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D21B08111A1B4C500041ECF3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D2C2DBF91AAF1F7000FADFDE /* Features */,
+				D21B07ED1A1B4AA20041ECF3 /* BackgroundTextureAccessAppDelegate.h */,
+				D21B07EE1A1B4AA20041ECF3 /* BackgroundTextureAccessAppDelegate.m */,
+				D21B08131A1B4C6A0041ECF3 /* SampleApplication */,
+				D21B08141A1B4C860041ECF3 /* SampleAppUI */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D21B08131A1B4C6A0041ECF3 /* SampleApplication */ = {
+			isa = PBXGroup;
+			children = (
+				D21B08601A1B69900041ECF3 /* shaders */,
+				D21B084F1A1B698A0041ECF3 /* Quad.h */,
+				D21B08501A1B698A0041ECF3 /* SampleApplication3DModel.h */,
+				D21B08511A1B698A0041ECF3 /* SampleApplication3DModel.m */,
+				D21B08521A1B698A0041ECF3 /* SampleApplicationSession.h */,
+				D21B08531A1B698A0041ECF3 /* SampleApplicationSession.mm */,
+				D21B08541A1B698A0041ECF3 /* SampleApplicationShaderUtils.h */,
+				D21B08551A1B698A0041ECF3 /* SampleApplicationShaderUtils.m */,
+				D8223DCC1D6D1A91006884AE /* SampleAppRenderer.h */,
+				D8223DCD1D6D1A91006884AE /* SampleAppRenderer.mm */,
+				D21B08561A1B698A0041ECF3 /* SampleApplicationUtils.cpp */,
+				D21B08571A1B698A0041ECF3 /* SampleApplicationUtils.h */,
+				FB1024CF1A827FC000A2536F /* SampleGLResourceHandler.h */,
+				D21B08581A1B698A0041ECF3 /* Teapot.h */,
+				D21B08591A1B698A0041ECF3 /* Texture.h */,
+				D21B085A1A1B698A0041ECF3 /* Texture.mm */,
+			);
+			name = SampleApplication;
+			sourceTree = "<group>";
+		};
+		D21B08141A1B4C860041ECF3 /* SampleAppUI */ = {
+			isa = PBXGroup;
+			children = (
+				FB1024E71A8280F100A2536F /* Transitions */,
+				D21B082B1A1B555B0041ECF3 /* SampleAppAboutViewController.h */,
+				D21B082C1A1B555B0041ECF3 /* SampleAppAboutViewController.m */,
+				FB2F73BF1A7FD5920098C5DD /* SampleAppMenuViewController.h */,
+				FB2F73C01A7FD5920098C5DD /* SampleAppMenuViewController.mm */,
+			);
+			name = SampleAppUI;
+			sourceTree = "<group>";
+		};
+		D21B08151A1B4D2A0041ECF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D21B08161A1B4D320041ECF3 /* Assets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D21B08161A1B4D320041ECF3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D21B08361A1B5B930041ECF3 /* BackgroundTextureAccess */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		D21B08361A1B5B930041ECF3 /* BackgroundTextureAccess */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3277B1A88F39500639FA2 /* BTA.png */,
+				FBBB39B71A8288B400DBB1D0 /* BT_about.html */,
+				FBBB39B81A8288B400DBB1D0 /* Tarmac.dat */,
+				FBBB39B91A8288B400DBB1D0 /* Tarmac.xml */,
+				FBBB39BA1A8288B400DBB1D0 /* TextureTeapotRed.png */,
+			);
+			name = BackgroundTextureAccess;
+			sourceTree = "<group>";
+		};
+		D21B08601A1B69900041ECF3 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D8223DC81D6D1A86006884AE /* Background.fragsh */,
+				D8223DC91D6D1A86006884AE /* Background.vertsh */,
+				D21B08611A1B69A10041ECF3 /* Line.fragsh */,
+				D21B08621A1B69A10041ECF3 /* Line.vertsh */,
+				D21B08631A1B69A10041ECF3 /* Simple.fragsh */,
+				D21B08641A1B69A10041ECF3 /* Simple.vertsh */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		D21B087B1A1B6C710041ECF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D21B08801A1B71190041ECF3 /* CoreMedia.framework */,
+				D21B087C1A1B6E1E0041ECF3 /* CoreMotion.framework */,
+				D21B087D1A1B6E1E0041ECF3 /* Foundation.framework */,
+				D21B08791A1B6AEA0041ECF3 /* libVuforia.a */,
+				D21B08691A1B6AD60041ECF3 /* AVFoundation.framework */,
+				D21B086A1A1B6AD60041ECF3 /* CoreFoundation.framework */,
+				D21B086B1A1B6AD60041ECF3 /* CoreGraphics.framework */,
+				D21B086C1A1B6AD60041ECF3 /* OpenGLES.framework */,
+				D21B086D1A1B6AD60041ECF3 /* QuartzCore.framework */,
+				D21B086E1A1B6AD60041ECF3 /* Security.framework */,
+				D21B086F1A1B6AD60041ECF3 /* SystemConfiguration.framework */,
+				D21B08701A1B6AD60041ECF3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2C2DBF91AAF1F7000FADFDE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D2C2DBFA1AAF1F8B00FADFDE /* BackgroundTextureAccess */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		D2C2DBFA1AAF1F8B00FADFDE /* BackgroundTextureAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D2C2DC011AAF1FDA00FADFDE /* shaders */,
+				D2C2DBFB1AAF1FCD00FADFDE /* BackgroundTextureAccessEAGLView.h */,
+				D2C2DBFC1AAF1FCD00FADFDE /* BackgroundTextureAccessEAGLView.mm */,
+				D2C2DBFD1AAF1FCD00FADFDE /* BackgroundTextureAccessViewController.h */,
+				D2C2DBFE1AAF1FCD00FADFDE /* BackgroundTextureAccessViewController.mm */,
+			);
+			name = BackgroundTextureAccess;
+			sourceTree = "<group>";
+		};
+		D2C2DC011AAF1FDA00FADFDE /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D2C2DC021AAF1FF200FADFDE /* BGShader.fragsh */,
+				D2C2DC031AAF1FF200FADFDE /* BGShader.vertsh */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		FB1024E71A8280F100A2536F /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				FB1024E81A82814000A2536F /* PresentMenuSegue.h */,
+				FB1024E91A82814000A2536F /* PresentMenuSegue.m */,
+				FB1024EA1A82814000A2536F /* UnwindMenuSegue.h */,
+				FB1024EB1A82814000A2536F /* UnwindMenuSegue.m */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D21B07E51A1B4AA20041ECF3 /* BackgroundTextureAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D21B08091A1B4AA20041ECF3 /* Build configuration list for PBXNativeTarget "BackgroundTextureAccess" */;
+			buildPhases = (
+				D21B07E21A1B4AA20041ECF3 /* Sources */,
+				D21B07E31A1B4AA20041ECF3 /* Frameworks */,
+				D21B07E41A1B4AA20041ECF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackgroundTextureAccess;
+			productName = BackgroundTextureAccess;
+			productReference = D21B07E61A1B4AA20041ECF3 /* BgdTexture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D21B07DE1A1B4AA10041ECF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Qualcomm;
+				TargetAttributes = {
+					D21B07E51A1B4AA20041ECF3 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 3KS9B887BK;
+					};
+				};
+			};
+			buildConfigurationList = D21B07E11A1B4AA10041ECF3 /* Build configuration list for PBXProject "BackgroundTextureAccess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D21B07DD1A1B4AA10041ECF3;
+			productRefGroup = D21B07E71A1B4AA20041ECF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D21B07E51A1B4AA20041ECF3 /* BackgroundTextureAccess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D21B07E41A1B4AA20041ECF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21B08671A1B69A10041ECF3 /* Simple.fragsh in Resources */,
+				D272A5741A9245EA00FD0C30 /* Main.storyboard in Resources */,
+				D21B08681A1B69A10041ECF3 /* Simple.vertsh in Resources */,
+				18EB634E1ACCA16900EF1C28 /* Localizable.strings in Resources */,
+				FBBB39BC1A8288B400DBB1D0 /* Tarmac.dat in Resources */,
+				D21B08661A1B69A10041ECF3 /* Line.vertsh in Resources */,
+				D2C2DC041AAF1FF200FADFDE /* BGShader.fragsh in Resources */,
+				D2C2DC051AAF1FF200FADFDE /* BGShader.vertsh in Resources */,
+				FBBB39BE1A8288B400DBB1D0 /* TextureTeapotRed.png in Resources */,
+				D8223DCA1D6D1A86006884AE /* Background.fragsh in Resources */,
+				FBC3277C1A88F39500639FA2 /* BTA.png in Resources */,
+				D8223DCB1D6D1A86006884AE /* Background.vertsh in Resources */,
+				D21B08651A1B69A10041ECF3 /* Line.fragsh in Resources */,
+				D21B07F71A1B4AA20041ECF3 /* Images.xcassets in Resources */,
+				FBBB39BD1A8288B400DBB1D0 /* Tarmac.xml in Resources */,
+				FBBB39BB1A8288B400DBB1D0 /* BT_about.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D21B07E21A1B4AA20041ECF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21B085E1A1B698A0041ECF3 /* SampleApplicationUtils.cpp in Sources */,
+				D21B085F1A1B698A0041ECF3 /* Texture.mm in Sources */,
+				D2C2DC001AAF1FCD00FADFDE /* BackgroundTextureAccessViewController.mm in Sources */,
+				D21B07EF1A1B4AA20041ECF3 /* BackgroundTextureAccessAppDelegate.m in Sources */,
+				D21B082D1A1B555B0041ECF3 /* SampleAppAboutViewController.m in Sources */,
+				FB2F73C11A7FD5920098C5DD /* SampleAppMenuViewController.mm in Sources */,
+				D8223DCE1D6D1A91006884AE /* SampleAppRenderer.mm in Sources */,
+				D21B07EC1A1B4AA20041ECF3 /* main.m in Sources */,
+				D21B085C1A1B698A0041ECF3 /* SampleApplicationSession.mm in Sources */,
+				D21B085B1A1B698A0041ECF3 /* SampleApplication3DModel.m in Sources */,
+				FB1024ED1A82814000A2536F /* UnwindMenuSegue.m in Sources */,
+				D2C2DBFF1AAF1FCD00FADFDE /* BackgroundTextureAccessEAGLView.mm in Sources */,
+				FB1024EC1A82814000A2536F /* PresentMenuSegue.m in Sources */,
+				D21B085D1A1B698A0041ECF3 /* SampleApplicationShaderUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D272A5721A9245EA00FD0C30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D272A5731A9245EA00FD0C30 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D21B08071A1B4AA20041ECF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+			};
+			name = Debug;
+		};
+		D21B08081A1B4AA20041ECF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+			};
+			name = Release;
+		};
+		D21B080A1A1B4AA20041ECF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = 3KS9B887BK;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = ../../build/include;
+				INFOPLIST_FILE = "BackgroundTextureAccess/BackgroundTextureAccess-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
+				PRODUCT_NAME = BgdTexture;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		D21B080B1A1B4AA20041ECF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = 3KS9B887BK;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = ../../build/include;
+				INFOPLIST_FILE = "BackgroundTextureAccess/BackgroundTextureAccess-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
+				PRODUCT_NAME = BackgroundTextureAccess;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D21B07E11A1B4AA10041ECF3 /* Build configuration list for PBXProject "BackgroundTextureAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21B08071A1B4AA20041ECF3 /* Debug */,
+				D21B08081A1B4AA20041ECF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D21B08091A1B4AA20041ECF3 /* Build configuration list for PBXNativeTarget "BackgroundTextureAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21B080A1A1B4AA20041ECF3 /* Debug */,
+				D21B080B1A1B4AA20041ECF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D21B07DE1A1B4AA10041ECF3 /* Project object */;
+}

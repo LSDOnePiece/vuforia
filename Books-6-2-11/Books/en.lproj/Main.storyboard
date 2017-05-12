@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hje-P7-1tZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Myj-8D-M6Y">
+            <objects>
+                <navigationController id="hje-P7-1tZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tMk-z9-CmO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lUR-3L-Cca" kind="relationship" relationship="rootViewController" id="voB-wd-3jZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rtk-y9-06N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672" y="158.99999999999994"/>
+        </scene>
+        <!--About Sample-->
+        <scene sceneID="MCG-K3-xGE">
+            <objects>
+                <viewController title="About Sample" id="lUR-3L-Cca" customClass="SampleAppAboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eC2-86-aAi"/>
+                        <viewControllerLayoutGuide type="bottom" id="mU0-j0-Nx6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RLb-Fp-zAT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYp-Ft-e08">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tYp-Ft-e08" firstAttribute="top" secondItem="RLb-Fp-zAT" secondAttribute="top" id="5H1-2n-nIQ"/>
+                            <constraint firstAttribute="trailing" secondItem="tYp-Ft-e08" secondAttribute="trailing" id="L0M-tN-Ui9"/>
+                            <constraint firstItem="tYp-Ft-e08" firstAttribute="leading" secondItem="RLb-Fp-zAT" secondAttribute="leading" id="aDl-xF-92z"/>
+                            <constraint firstItem="tYp-Ft-e08" firstAttribute="bottom" secondItem="mU0-j0-Nx6" secondAttribute="top" id="drF-LX-WDd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Books" id="hMZ-fy-JsH">
+                        <barButtonItem key="rightBarButtonItem" id="Um4-88-qjK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IrQ-DU-rG4">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStartButton:" destination="lUR-3L-Cca" eventType="touchUpInside" id="oIs-R9-23q"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="uiWebView" destination="tYp-Ft-e08" id="JRQ-5R-oqG"/>
+                        <segue destination="Dox-ur-9Yg" kind="push" identifier="PushBooks" id="416-PK-TOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTa-iB-UDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-264" y="158"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="2jc-ge-IAS">
+            <objects>
+                <viewController id="ySL-yb-anU" customClass="BookWebDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NAn-ev-FYl"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Sd-cj-T80"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RTn-zs-P4l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIq-zB-oez">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pIq-zB-oez" firstAttribute="top" secondItem="RTn-zs-P4l" secondAttribute="top" id="Tpk-vI-aYq"/>
+                            <constraint firstItem="pIq-zB-oez" firstAttribute="leading" secondItem="RTn-zs-P4l" secondAttribute="leading" id="Wyy-qq-o94"/>
+                            <constraint firstAttribute="trailing" secondItem="pIq-zB-oez" secondAttribute="trailing" id="lVf-IZ-JZE"/>
+                            <constraint firstItem="pIq-zB-oez" firstAttribute="bottom" secondItem="4Sd-cj-T80" secondAttribute="top" id="rKA-nE-PTJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="lSe-3x-1rB">
+                        <barButtonItem key="leftBarButtonItem" title=" " id="ngC-8X-rUw"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="TLO-T4-pVR">
+                            <connections>
+                                <action selector="onDonePressed:" destination="ySL-yb-anU" id="aTi-qs-dCX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="pIq-zB-oez" id="9v6-Np-16y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fE4-ly-oXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="158"/>
+        </scene>
+        <!--Books View Controller-->
+        <scene sceneID="r9O-MZ-2uJ">
+            <objects>
+                <viewController title="Books View Controller" id="Dox-ur-9Yg" customClass="BooksViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zdz-w1-pcg"/>
+                        <viewControllerLayoutGuide type="bottom" id="jrZ-I2-m7N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Kf-4F-hac">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CR.png" translatesAutoresizingMaskIntoConstraints="NO" id="NLK-UM-yG4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v1m-Tl-FkG"/>
+                    <connections>
+                        <outlet property="ARViewPlaceholder" destination="NLK-UM-yG4" id="Lck-me-x5Q"/>
+                        <segue destination="ySL-yb-anU" kind="push" identifier="PushWebDetail" id="Khe-eY-83V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6I4-qm-WXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CR.png" width="289" height="453"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
